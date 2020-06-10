@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+  body{
+    background-color:#efeee7;
+    font-family: "Georgia,Times New Roman,Times,serif";
+    font-color: #333333;
+    margin:0;
+    padding:0;
+    line-height: 1.5em;
+}
+
+header{
+    background-color:#333333;
+}
+
+h1{
+    color:#eee;
+    font-size: 28px;
+    padding:5px;
+    text-align: center;
+}
+
+h2{
+    font-size: 24px;
+}
+
+.container {
+    width:1024px;
+    margin:0 auto;
+}
+
+#main-bio {
+    float:left;
+    width:70%;
+    
+}
+
+#bio-image {
+    float:left;
+    margin-right:5px;
+    margin-left: 50px;
+    width: 200px;
+    padding: 10px;
+}
+
+#bio-name {
+   position: relative;
+  	left: 50px;
+    top: 360px;
+}
+
+
+#contact-info {
+    float:left;
+    width:30%;
+    line-height: 1.5;
+}
+
+a:link {
+    color:#d21034; 
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: red;
+  text-align: center;
+}
+
+</style>
+
+
+
+<body>
+
+  <header>
+    <h1>Student Bio</h1>
+  </header>
+
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Kandra Romanowski</h2>
+        <img id="bio-image" src="C:\Users\kandr\kandrar.github.io\09-HW_StudentBio\Work Photo (2).jpg" alt="Kandra Romanowski">
+      </section>
+      <p>This is my site and I am learning code. Thank you GWU Data Analytics Bootcamp 2020.</p>
+    </section>
+
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">kandraromanowski@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">https://github.com/kandrar</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </aside>
+    <div class="footer">
+        <p>Footer</p>
+      </div>
+  </main>
+
+</body>
+
+</html>
